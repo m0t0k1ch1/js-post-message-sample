@@ -1,2 +1,3 @@
 # js-post-message-sample
-sample apps for testing window.postMessage()
+
+sample apps for testing `window.postMessage()`

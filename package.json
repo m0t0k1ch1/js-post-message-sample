@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "child": "parcel -p 1234 ./child/child.html",
+    "parent": "parcel -p 4321 ./parent/parent.html"
+  },
+  "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.4",
+    "typescript": "^4.1.3"
+  }
+}
