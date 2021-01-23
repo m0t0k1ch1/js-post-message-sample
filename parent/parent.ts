@@ -20,7 +20,10 @@ function createSpecialMessage(name: string): Promise<string> {
     chan.port1.onmessage = (ev: MessageEvent) => {
       chan.port1.close();
       chan.port2.close();
-      if (ev.data.error) reject(ev.data.error);
+      if (ev.data.error) {
+        reject(ev.data.error);
+        return;
+      }
       resolve(ev.data.result.message);
     };
     child.contentWindow?.postMessage({
